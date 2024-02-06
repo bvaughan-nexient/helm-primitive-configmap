@@ -1,0 +1,6 @@
+apiVersion: v2
+name: <CHART_NAME>
+description: <CHART_DESCRIPTION>
+type: <CHART_TYPE library or application>
+version: <CHART_VERSION semver>
+appVersion: <CHART_APP_VERSION to match version>
