@@ -1,0 +1,19 @@
+{{- define "libPrimitiveConfigMap.mapOfConfigMaps.v1" -}}
+{{- range $index, $element := . -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ $index }}
+  labels:
+    {{- include "libPrimitiveUtils.labels.v1" . | nindent 4 }}
+data:
+{{- range $key, $val := $element }}
+  {{ $key }}: {{ $val | quote }}
+{{- end }}
+---
+{{- end }}
+{{- end }}
+
+{{- define "libPrimitiveConfigMap.configmap.v1" -}}
+{{- include "libPrimitiveUtils.merge.v1" (append . "libPrimitiveConfigMap.configmap.v1.tpl") -}}
+{{- end -}}

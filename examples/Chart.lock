@@ -1,0 +1,6 @@
+dependencies:
+- name: libPrimitiveConfigMap
+  repository: file://../chart
+  version: 0.0.1
+digest: sha256:91e19b020a8f56ca0dc246de52388c1618d771830a6b264fb6f34da6c4c81dd0
+generated: "2024-02-06T13:34:07.055247-06:00"

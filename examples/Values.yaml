@@ -1,0 +1,11 @@
+# configMaps:
+#   first:
+#     thisone: "there's a bunch of stuff that goes here"
+#   second:
+#     another: "more stuff"
+#     third: "third stuff"
+
+configMap:
+  data:
+    first: "thisone: there's a bunch of stuff that goes here"
+    second: "another: more stuff\nthird: third stuff"

@@ -1,0 +1,7 @@
+{{- if ne .Values.configMaps nil }}
+{{- include "libPrimitiveConfigMap.mapOfConfigMaps.v1" .Values.configMaps }}
+{{- end }}
+
+{{- if ne .Values.configMap nil }} 
+{{- include "libPrimitiveConfigMap.configMap.v1" .Values.configMap }}
+{{- end }}

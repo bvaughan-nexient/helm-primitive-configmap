@@ -1,0 +1,6 @@
+dependencies:
+- name: libPrimitiveUtils
+  repository: https://bvaughan-nexient.github.io/helm-primitive-utils
+  version: 0.0.2
+digest: sha256:584818282fa0423f455bd4f0be66aaed8ea9fed1d21c9c5ea67c4ad400097a5f
+generated: "2024-02-06T13:37:48.898028-06:00"

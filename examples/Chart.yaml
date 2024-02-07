@@ -1,6 +1,10 @@
 apiVersion: v2
-name: <CHART_NAME>
-description: <CHART_DESCRIPTION>
-type: <CHART_TYPE library or application>
-version: <CHART_VERSION semver>
-appVersion: <CHART_APP_VERSION to match version>
+name: testChart
+description: Chart to test the functionality of the helm chart in this repo.
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
+dependencies:
+  - name: libPrimitiveConfigMap
+    version: 0.0.1
+    repository: file://../chart
